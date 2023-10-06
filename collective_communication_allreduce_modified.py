@@ -15,7 +15,7 @@ class Worker:
         col.allreduce(self.buffer, "default")
         return self.buffer
 
-ray.init()  # Ensure Ray is initialized
+ray.init() 
 
 # Create two actors A and B
 A = Worker.remote()
